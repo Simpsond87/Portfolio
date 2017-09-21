@@ -1,0 +1,49 @@
+/* Home Styles */
+
+.container {
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  background-image: url('../../images/gray_sketch.jpg');
+  background-size: cover;
+  text-shadow: 0 0 5px white;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.nav {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  float:right;
+}
+.navButton {
+  text-decoration: none;
+  margin: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color:black;
+}
+.navButton:hover {
+  text-decoration: underline;
+}
+.main {
+  height: 100vh;
+}
+.contactBox {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 10% 10%;
+}
+.title {
+  font-size: 60px;
+}
+.icon {
+  border: 3px solid white;
+  border-radius: 10px;
+}
+.aboutMe {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: justify;
+}
