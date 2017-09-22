@@ -32,10 +32,10 @@ export default class About extends React.PureComponent {
                 <p>&#60;Who Is?&#47;&#62;</p>
               </div>
               <div className="pic">
-                <img className="myPic" src={require("../../images/me.jpg")}/>
+                <img className="myPic" src={require("../../images/me_gray.jpg")}/>
               </div>
               <div className="aboutMe">
-                <p>My name is Daniel Simpson, and I love programming. I am from South Carolina and have lived there my whole life. I have a Bechelor's degree in Math/Computer Science, and have applied my knowledge personally and professionally toward the end goal of becomming a competent computer scientist. My interests lie mainly in web development. I enjoy seeing an idea come to life on screen in a way that is interactive and eye-catching. I also like to play billiards and piano, cook, read, write fiction, and drink coffee. I hope you appreciate my portfolio, and I'll see you in the forums!</p>
+                <p>My name is Daniel Simpson, and I love programming. I am from South Carolina and have lived there my whole life. I have a Bechelor's degree in Math/Computer Science, and have applied my knowledge personally and professionally toward the end goal of becomming a competent computer scientist. My interests lie mainly in web development. I enjoy seeing an idea come to life on screen in a way that is interactive and eye-catching. I also like to play billiards, piano, and the Chinese board game of "Go"... as well as cook, read, write fiction, and drink coffee. I hope you appreciate my portfolio, and I'll see you in the forums!</p>
               </div>
             </div>
           </main>

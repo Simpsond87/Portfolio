@@ -58,6 +58,16 @@ export default function createRoutes() {
        .catch(errorLoading);
    },
  },
+
+ {
+  path: '/Animations',
+  name: 'Animations',
+  getComponent(nextState, comMod) {
+    import('containers/Animations')
+      .then(loadModule(comMod))
+      .catch(errorLoading);
+  },
+},
      {
       path: '*',
       name: 'notfound',

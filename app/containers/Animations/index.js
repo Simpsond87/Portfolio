@@ -1,24 +1,21 @@
 /*
  *
- * Home
+ * Animations
  *
  */
 
 import React from 'react';
 import Helmet from 'react-helmet';
-
 import {Link} from 'react-router';
-import Bars from 'react-icons/lib/fa/bars';
-import FaConnectdevelop from 'react-icons/lib/fa/connectdevelop';
 
 import './style.css';
 import './styleM.css';
 
-export default class Home extends React.PureComponent {
+export default class Animations extends React.PureComponent {
   render() {
     return (
       <div className="container">
-        <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
+        <Helmet title="Animations" meta={[ { name: 'description', content: 'Description of Animations' }]}/>
         <header>
           <div className="nav">
             <Link to="/" className="navButton">Home</Link>
@@ -29,25 +26,23 @@ export default class Home extends React.PureComponent {
           </div>
         </header>
         <main>
-          <div className="displayBox">
-            <div className="title">
-                <p>&#60; Web Development</p>
-                <p>Portfolio &#47;&#62;</p>
+          <div className="contentBox">
+            <div className="titleAnimations">
+              <p>&#60; Animations &#47;&#62;</p>
             </div>
-            <div className="icon">
-              <FaConnectdevelop/>
-            </div>
-            <div className="myName">
-              <p>&#35;Daniel Simpson</p>
+            <div className="changeColorsBox">
+              
             </div>
           </div>
         </main>
+        <main>
 
+        </main>
       </div>
     );
   }
 }
 
-Home.contextTypes = {
+Animations.contextTypes = {
   router: React.PropTypes.object
 };

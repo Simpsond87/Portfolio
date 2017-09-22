@@ -8,6 +8,9 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {Link} from 'react-router';
 import FaHome from 'react-icons/lib/fa/home';
+import FaPhone from 'react-icons/lib/fa/phone';
+import FaKeyboardO from 'react-icons/lib/fa/keyboard-o';
+//import FaLaptop from 'react-icons/lib/fa/laptop';
 
 import './style.css';
 import './styleM.css';
@@ -31,12 +34,21 @@ export default class Contact extends React.PureComponent {
               <div className="title">
                 <p>&#60;Get In Touch&#47;&#62;</p>
               </div>
-              <div className="icon">
+              <div className="iconContact">
                 <FaHome />
               </div>
-              <div className="aboutMe">
-                <p>simpson.d87@gmail.com</p>
-                <p>803.270.8145</p>
+              <br/>
+              <div className="contactInfo">
+                <p>
+                  <span>
+                    <FaKeyboardO className="keyboardIcon"/>
+                  </span>
+                  &nbsp;&nbsp;simpson.d87@gmail.com</p>
+                <p>
+                  <span>
+                    <FaPhone className="phoneIcon"/>
+                  </span>
+                  &nbsp;803.270.8145</p>
               </div>
             </div>
           </main>
