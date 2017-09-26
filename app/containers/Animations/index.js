@@ -12,10 +12,17 @@ import './style.css';
 import './styleM.css';
 
 export default class Animations extends React.PureComponent {
-  constructor(){
+  constructor() {
     super();
     this.state = {
-      colors: ['red', 'orange', 'yellow', 'green', 'blue', 'purple'],
+      colors: [
+        'red',
+        'orange',
+        'yellow',
+        'green',
+        'blue',
+        'purple'
+      ],
       hands: [
         'hand1.gif',
         'hand2.gif',
@@ -67,31 +74,31 @@ export default class Animations extends React.PureComponent {
   }
 
   moveBox = () => {
-  let _this = this;
-  let interval = setInterval(function() {
-      _this.frame();
-    }, 10);
-    this.setState({
-      interval: interval
-    })
+    let _this = this;
+    clearInterval(this.state.interval);
+    let interval = setInterval(function() {
+        _this.frame();
+      }, 10);
+      this.setState({
+        interval: interval
+      })
   }
 
   frame = () => {
-    let _this = this;
     if(this.state.pos == 350)
     {
-      _this.refs.box.style.top = '0px';
-      _this.refs.box.style.left = '0px';
+      this.refs.box.style.top = '0px';
+      this.refs.box.style.left = '0px';
       clearInterval(this.state.interval);
-      _this.setState({
+      this.setState({
         pos: 0
       })
     }
     else
     {
-      _this.state.pos++;
-      _this.refs.box.style.top = this.state.pos +'px';
-      _this.refs.box.style.left = this.state.pos +'px';
+      this.state.pos++;
+      this.refs.box.style.top = this.state.pos +'px';
+      this.refs.box.style.left = this.state.pos +'px';
     }
   }
 
@@ -150,6 +157,10 @@ export default class Animations extends React.PureComponent {
             <div className="titleAnimations">
               <p>&#60; Animations &#47;&#62;</p>
             </div>
+            <div>
+              <h2 className="bounce">Bounce</h2>
+            </div>
+            <br/>
             <div className="colorBoxContainer">
               <div className="colorBox" ref="colorBox">
               </div>
